@@ -9,26 +9,32 @@
     <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
     <!-- <script src="index.js"> </script> -->
     <!-- <script type="text/javascript" src="data.json"></script> -->
+    <link rel="stylesheet" href="index.css">
   </head>
-
-
+  
+  
   <body>
-        <main>
-        <h1 href="parts.html">PC part finder</h1>  
-        <button type="button" onclick="window.location.href='home.html'">HOME</button>
-        <button type="button" onclick="window.location.href='vr.html'">VR</button>
-        <button type="button" onclick="window.location.href='pc.html'">PC</button>
-        <button type="button" onclick="window.location.href='phones.html'">Phones</button>
-        <button type="button" onclick="window.location.href='processors.html'">Processors</button>
-        <button type="button" onclick="window.location.href='parts.html'">Parts</button>
-        <button type="button" onclick="window.location.href='sell.html'">Sell</button>
-        <button type="button" class="data">get data</button>
+    <main class="btns-container">
+      <h1 href="parts.html" class="finder">PC part finder<h1>  
+        <button id="home" class="ob" type="button" onclick="window.location.href='home.html'">Home</button>
+        <button id="VR" class="ob" type="button" onclick="window.location.href='vr.html'">VR</button>
+        <button id="pc" class="ob" type="button" onclick="window.location.href='pc.html'">PC</button>
+        <button id="phones" class="ob" type="button" onclick="window.location.href='phones.html'">Phones</button>
+        <button id="processors" class="ob" type="button" onclick="window.location.href='processors.html'">Processors</button>
+        <button id="parts" class="ob" type="button" onclick="window.location.href='parts.html'">Parts</button>
+        <button id="sell" class="ob" type="button" onclick="window.location.href='sell.html'">Sell</button>
         <div class="banner-section" id="img-container">
         </div>
-        <section id="stuff"></section>
+        <h2 class="home">Parts</h2>
+        <p class="intro"></p>
+        <img src="https://file.asciiart.cc/cover/03ec2198792f0dda.png!cover_jpg">
 
+        
     </main>
+    <script></script>
+    <p id="home1"></p>
+    <section id="electroics-container"></section>
     <script src="./node_modules/axios/dist/axios.min.js"></script>
-	<script src="index.js"></script>
-  </body>
-</html>
+    	<script src="index.js"></script>
+    </body>
+    </html>

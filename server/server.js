@@ -1,18 +1,21 @@
 const express = require('express');
 const cors = require('cors');
 
+
 const app = express();
-// const ctrl = require('./controller')
+
+
+
 
 
 app.use(express.json());
 app.use(cors());
-const {getData} = require('./controller')
+const {getData, createProduct, deleteData} = require('./controller')
 
-// const {}
-
-
+app.post('/api/data', createProduct)
 app.get('/api/data', getData)
+app.delete('/api/data/:id', deleteData)
+
 
 
 

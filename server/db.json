@@ -1,20 +1,190 @@
 [
     {
       "id": 1,
-      "address": "1600 Pennsylvania Avenue NW",
+      "address": "another fancy pc",
       "price": 290000,
-      "imageURL" : "https://www.washingtonian.com/wp-content/uploads/2020/07/Official-White-House-Photo-by-Andrea-Hanks-1.jpg"
+      "imageURL" : "https://cdn.shopify.com/s/files/1/0408/5792/7834/files/redyux-bg4.jpg?v=1637611285",
+      "type" : "pc"
     },
     {
       "id": 2,
-      "address": "London SW1A 1AA",
+      "address": "and another",
       "price": 454615,
-      "imageURL" : "https://cdn.londonandpartners.com/asset/buckingham-palace-buckingham-palace-photographer-andrew-holt-ba2d2924f687e5713154dbf611c103e1.jpg"
-    },
-    {
-      "id": 3,
-      "address": "Taj Road",
-      "price": 169000,
-      "imageURL" : "https://robbreport.com/wp-content/uploads/2013/06/831971.jpg?w=943"
+      "imageURL" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk8ajjruIqgaQ0SONorcwBblmg5CuwfEnitA&usqp=CAU",
+      "type" : "pc"
     }
+    ,{
+      "id": 3,
+      "address": "ooooooo fancy",
+      "price": 169000,
+      "imageURL" : "https://nerdtechy.com/wp-content/uploads/2019/01/rgb-led-kit.jpg",
+      "style" : "lights",
+      "type" : "pc"
+    }
+
+    ,{
+      "id": 4,
+      "address": "MSI MPG Z490 GAMING EDGE WIFI ATX Gaming Motherboard (10th Gen Intel Core, LGA 1200 Socket",
+      "price": 169000,
+      "imageURL" : "https://m.media-amazon.com/images/I/91KDtfEYkGL._AC_UY218_.jpg",
+      "style" : "lights"
+    }
+    ,{
+      "id": 5,
+      "address": "Corsair Vengeance RGB Pro 16GB (2x8GB) DDR4 3200MHz C16 LED Desktop Memory - White",
+      "price": 169000,
+      "imageURL" : "https://m.media-amazon.com/images/I/61b5vQ35gPL._AC_UY218_.jpg",
+      "style" : "lights"
+    }
+    ,{
+      "id": 6,
+      "address": "AMD Ryzen 7 5800X 8-core, 16-Thread Unlocked Desktop Processor",
+      "price": 169000,
+      "imageURL" : "https://m.media-amazon.com/images/I/61DYLoyNRWL._AC_UY218_.jpg",
+      "style" : "lights"
+    }
+    ,{
+      "id": 7,
+      "address": "HyperX Cloud Alpha - Gaming Headset, Dual Chamber Drivers, Legendary Comfort, Aluminum Frame, Detachable Microphone, Works on PC, PS4, PS5, Xbox One, Xbox Series X|S",
+      "price": 169000,
+      "imageURL" : "https://m.media-amazon.com/images/I/71-hkFn17zL._AC_UY218_.jpg",
+      "style" : "lights"
+    }
+    ,{
+      "id": 8,
+      "address": "HyperX Cloud Alpha - Gaming Headset, Dual Chamber Drivers, Legendary Comfort, Aluminum Frame, Detachable Microphone, Works on PC, PS4, PS5, Xbox One, Xbox Series X|S",
+      "price": 169000,
+      "imageURL" : "https://m.media-amazon.com/images/I/71-hkFn17zL._AC_UY218_.jpg",
+      "style" : "lights"
+    }
+    ,{
+      "id": 9,
+      "address": "HTC VIVE Pro 2 Virtual Reality System",
+      "price": 1399,
+      "imageURL" : "https://m.media-amazon.com/images/I/61J7LQCNdWL._AC_UY218_.jpg",
+      "style" : "none",
+      "type" : "VR"
+    }
+    ,{
+      "id": 10,
+      "address": "2022 Oculus Quest 2 All-In-One VR Headset, Touch Controllers, 256GB SSD, Glasses Compatible",
+      "price": 399,
+      "imageURL" : "https://m.media-amazon.com/images/I/61kK+wdavFL._AC_UY218_.jpg",
+      "style" : "none",
+      "type" : "VR"
+    }
+    ,{
+      "id": 11,
+      "address": "Meta Quest 2 — Advanced All-In-One Virtual Reality Headset — 128 GB",
+      "price": 249,
+      "imageURL" : "https://m.media-amazon.com/images/I/61tE7IcuLmL._AC_UY218_.jpg",
+      "style" : "none",
+      "type" : "VR"
+    }
+    ,{
+      "id": 12,
+      "address": "Meta Quest 2 — Advanced All-In-One Virtual Reality Headset — 256 GB",
+      "price": 348,
+      "imageURL" : "https://m.media-amazon.com/images/I/61tE7IcuLmL._AC_UY218_.jpg",
+      "style" : "none",
+      "type" : "VR"
+    }
+    ,{
+      "id": 13,
+      "address": "PlayStation VR Marvel's Iron Man VR Bundle",
+      "price": 568,
+      "imageURL" : "https://m.media-amazon.com/images/I/71hfAFNOO7L._AC_UY218_.jpg",
+      "style" : "none",
+      "type" : "VR"
+    }
+    ,{
+      "id": 14,
+      "address": "2022 Newest HP Reverb G2 Virtual Reality Headset V2 Version",
+      "price": 319,
+      "imageURL" : "https://m.media-amazon.com/images/I/61QpnIIjscL._AC_UY218_.jpg",
+      "style" : "none",
+      "type" : "VR"
+    }
+    ,{
+      "id": 15,
+      "address": "DESTEK V5 VR Headset for Phone, 110°FOV HD Anti-Blue Virtual Reality Goggles for Androd & Samsung & iPhone",
+      "price": 35,
+      "imageURL" : "https://m.media-amazon.com/images/I/71DMs+pjJ1L._AC_UY218_.jpg",
+      "style" : "none",
+      "type" : "VR"
+    }
+    ,{
+      "id": 16,
+      "address": "Vodiac VR - Virtual Reality Goggles, Carry Case, 27 Free VR Videos & More via The Vodiac in-App Streaming Service",
+      "price": 39,
+      "imageURL" : "https://m.media-amazon.com/images/I/71DMs+pjJ1L._AC_UY218_.jpg",
+      "style" : "none",
+      "type" : "VR"
+    }
+    ,{
+      "id": 17,
+      "address": "Orzly VR Headset Designed for Nintendo Switch & Switch OLED Console with Adjustable Lens for a Virtual Reality",
+      "price": 24,
+      "imageURL" : "https://m.media-amazon.com/images/I/61-+WOXdMQL._AC_UY218_.jpg",
+      "style" : "none",
+      "type" : "VR"
+    }
+    ,{
+      "id": 18,
+      "address": "HTC Vive Pro 2 Headset Only",
+      "price": 799,
+      "imageURL" : "https://m.media-amazon.com/images/I/61iR+WmZZhS._AC_UL320_.jpg",
+      "style" : "none",
+      "type" : "VR"
+    }
+    ,{
+      "id": 19,
+      "address": "SAMSUNG HMD Odyssey+ Windows Mixed Reality",
+      "price": 589,
+      "imageURL" : "https://m.media-amazon.com/images/I/71x89-gSQVL._AC_UL320_.jpg",
+      "style" : "none",
+      "type" : "VR"
+    }
+    ,{
+      "id": 20,
+      "address": "HTC Vive Pro 2 Headset Only",
+      "price": 799,
+      "imageURL" : "https://m.media-amazon.com/images/I/61iR+WmZZhS._AC_UL320_.jpg",
+      "style" : "none",
+      "type" : "VR"
+    }
+    ,{
+      "id": 21,
+      "address": "SK hynix Gold P31 2TB PCIe NVMe Gen3 M.2 2280 Internal SSD l Up to 3500MB/S l Compact M.2 SSD Form Factor SK hynix SSD - Internal Solid State Drive with 128-Layer NAND Flash",
+      "price": 589,
+      "imageURL" : "https://m.media-amazon.com/images/I/71u-Ggd7jzL._AC_UY218_.jpg",
+      "style" : "none",
+      "type" : "parts"
+    }
+    ,{
+      "id": 22,
+      "address": "NZXT Kraken Z63 280mm - RL-KRZ63-01 - AIO RGB CPU Liquid Cooler - Customizable LCD Display - Improved Pump - Powered by CAM V4 - RGB Connector - Aer P 140mm Radiator Fans (2 Included)",
+      "price": 589,
+      "imageURL" : "https://m.media-amazon.com/images/I/71+4KDq+esL._AC_UY218_.jpg",
+      "style" : "none",
+      "type" : "parts"
+    }
+    ,{
+      "id": 23,
+      "address": "HTC Vive Pro 2 Headset Only",
+      "price": 589,
+      "imageURL" : "https://m.media-amazon.com/images/I/71Ihkth84gL._AC_UY218_.jpg",
+      "style" : "none",
+      "type" : "parts"
+    }
+    ,{
+      "id": 24,
+      "address": "AMD Ryzen 7 3700X 8-Core, 16-Thread Unlocked Desktop Processor with Wraith Prism LED Cooler",
+      "price": 589,
+      "imageURL" : "https://m.media-amazon.com/images/I/717Di3DGIbL._AC_UY218_.jpg",
+      "style" : "none",
+      "type" : "parts"
+    }
+    
+    
   ]
