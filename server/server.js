@@ -21,6 +21,9 @@ app.delete('/api/data/:id', deleteData)
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname , '../home.html'));
 });
+app.get('/home', (req, res) => {
+  res.sendFile(path.join(__dirname , '../home.html'));
+});
 app.get('/parts', (req, res) => {
   res.sendFile(path.join(__dirname , '../parts.html'));
 });
