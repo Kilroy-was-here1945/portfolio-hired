@@ -18,7 +18,7 @@ app.delete('/api/data/:id', deleteData)
 
 
 app.get('/', (req, res) => {
-  res.send('test');
+  res.sendFile(path.join(__dirname , '/home.html'));
 });
 
 
