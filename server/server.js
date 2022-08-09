@@ -21,6 +21,27 @@ app.delete('/api/data/:id', deleteData)
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname , '../home.html'));
 });
+app.get('/parts', (req, res) => {
+  res.sendFile(path.join(__dirname , '../parts.html'));
+});
+app.get('/pay', (req, res) => {
+  res.sendFile(path.join(__dirname , '../pay.html'));
+});
+app.get('/pc', (req, res) => {
+  res.sendFile(path.join(__dirname , '../pc.html'));
+});
+app.get('/phones', (req, res) => {
+  res.sendFile(path.join(__dirname , '../phones.html'));
+});
+app.get('/processors', (req, res) => {
+  res.sendFile(path.join(__dirname , '../processors.html'));
+});
+app.get('/sell', (req, res) => {
+  res.sendFile(path.join(__dirname , '../sell.html'));
+});
+app.get('/vr', (req, res) => {
+  res.sendFile(path.join(__dirname , '../vr.html'));
+});
 
 
 const PORT = process.env.PORT || 4000;
