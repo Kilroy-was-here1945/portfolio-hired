@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const path = require("path");
 
 
 const app = express();
@@ -18,12 +19,7 @@ app.delete('/api/data/:id', deleteData)
 
 
 app.get('/', (req, res) => {
-  // res.sendFile(path.join(__dirname , '../home.html'));
-  res.send(`
-  <h1>Welcome</h1>
-  <h2>Scroll to learn more</h2>
-`);
-
+  res.sendFile(path.join(__dirname , '../home.html'));
 });
 
 
