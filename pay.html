@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main class="btns-container">
+        <h1 href="parts.html" class="finder">PC part finder<h1>  
+            <button id="home" class="ob" type="button" onclick="window.location.href='home.html'">Home</button>
+            <button id="VR" class="ob" type="button" onclick="window.location.href='vr.html'">VR</button>
+            <button id="pc" class="ob" type="button" onclick="window.location.href='pc.html'">PC</button>
+            <button id="phones" class="ob" type="button" onclick="window.location.href='phones.html'">Phones</button>
+            <button id="processors" class="ob" type="button" onclick="window.location.href='processors.html'">Processors</button>
+            <button id="parts" class="ob" type="button" onclick="window.location.href='parts.html'">Parts</button>
+            <button id="sell" class="ob" type="button" onclick="window.location.href='sell.html'">Sell</button>
+            <button id="checkout" class="ob" type="button" onclick="window.location.href='checkout.html'">Checkout</button>
+            <div class="banner-section" id="img-container">
+        <h1 class="center">enter your information and we will send your products</h1>  
+
+    </main>
+    <form id="EnterInfo" class="center">
+        <input 
+            type='text'
+            id="bankInfo"
+            placeholder="banking number"/>
+        <input 
+            type='text'
+            id="price"
+            placeholder='address'/>
+        <input 
+            type='text'
+            id="email"
+            placeholder='email'/>
+        <button id="sell-btn" class="button4" style="background-color:red">BUY</button>
+    </form>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+	<script src="index.js"></script>
+  </body>
+</html>

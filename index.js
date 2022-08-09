@@ -12,13 +12,17 @@ const getAllProducts = () => axios.get(baseURL).then(dataCallback).catch(errCall
 const createProduct = body => axios.post(baseURL, body).then(dataCallback).catch(errCallback)
 const deleteData = id => axios.delete(`${baseURL}/${id}`).then(dataCallback).catch(errCallback)
 
+let total = 0
+// const content = document.getElementsByClassName("total");
+var paragraph = document.getElementById("total");
+// content.innerHTML='<h2 style="background:orange; color:blue; font-family:monospace">This is the new Header</h2>';
 
 function submitHandler(long, cartHolder) {
     // e.preventDefault()
     let address = document.querySelector('#address')
     let price = document.querySelector('#price')
     let imageURL = document.querySelector('#img')
-    console.log(document.querySelector('#img'))
+    // console.log(document.querySelector('#img'))
     const body = {
         id: `${long + 1}`,
         address: `${cartHolder}${address.value}`,
@@ -33,10 +37,10 @@ function submitHandler(long, cartHolder) {
 }
 function putInCart(newId, long, cartHolder) {
     // e.preventDefault()
-    console.log(long)
     let imageURL = document.getElementById(`${newId}`).getElementsByTagName('img')[0].src
-    console.log(imageURL)
-    let price = document.getElementById(`${newId}`).querySelector('.price').innerHTML
+    // console.log(imageURL)
+    let price = (document.getElementById(`${newId}`).querySelector('.price').innerHTML).replace(/[^0-9]/g,'')
+    // console.log(price)
     let address = document.getElementById(`${newId}`).querySelector('.address').innerHTML
     // console.log(document.querySelector('#img'))
     const body = {
@@ -94,13 +98,14 @@ if ( document.URL.includes("home") ) {
     function displayData(arr) {
         sendToHtml.innerHTML = ``
         for (let i = 0; i < arr.length; i++) {
-            console.log(arr[i].address.includes(121))
+            // console.log(arr[i].address.includes(121))
             if(!arr[i].address.includes(121)){
                 createProducts(arr[i], i, arr.length, 121)
                 productArray.push(arr[i])
                 if (arr[i].id>largestNum) {
                     largestNum = arr[i].id;
                 }
+                // console.log(Object.values(arr[i])[2])
                 }}
         }
 }
@@ -108,7 +113,7 @@ if ( document.URL.includes("vr") ) {
     function displayData(arr) {
         sendToHtml.innerHTML = ``
         for (let i = 0; i < arr.length; i++) {
-            console.log(arr[i].address.includes(121))
+            // console.log(arr[i].address.includes(121))
             if(arr[i].type === "VR"){
                 createProducts(arr[i], i, arr.length, 121)
                 productArray.push(arr[i])
@@ -122,7 +127,7 @@ if ( document.URL.includes("pc") ) {
     function displayData(arr) {
         sendToHtml.innerHTML = ``
         for (let i = 0; i < arr.length; i++) {
-            console.log(arr[i].address.includes(121))
+            // console.log(arr[i].address.includes(121))
             if(arr[i].type === "pc"){
                 createProducts(arr[i], i, arr.length, 121)
                 productArray.push(arr[i])
@@ -138,13 +143,13 @@ if ( document.URL.includes("phones") ) {
     function displayData(arr) {
         sendToHtml.innerHTML = ``
         for (let i = 0; i < arr.length; i++) {
-            console.log(arr[i].address.includes(121))
-            if(arr[i].type === "phones"){
+            // console.log(arr[i].address.includes(121))
+            // if(arr[i].type === "phones"){
                 createProducts(arr[i], i, arr.length, 121)
                 productArray.push(arr[i])
                 if (arr[i].id>largestNum) {
                     largestNum = arr[i].id;
-                }
+                // }
                 }}
         }
 }
@@ -154,13 +159,13 @@ if ( document.URL.includes("processors") ) {
     function displayData(arr) {
         sendToHtml.innerHTML = ``
         for (let i = 0; i < arr.length; i++) {
-            console.log(arr[i].address.includes(121))
-            if(arr[i].type === "processors"){
+            // console.log(arr[i].address.includes(121))
+            // if(arr[i].type === "processors"){
                 createProducts(arr[i], i, arr.length, 121)
                 productArray.push(arr[i])
                 if (arr[i].id>largestNum) {
                     largestNum = arr[i].id;
-                }
+                // }
                 }}
         }
 }
@@ -170,7 +175,7 @@ if ( document.URL.includes("parts") ) {
     function displayData(arr) {
         sendToHtml.innerHTML = ``
         for (let i = 0; i < arr.length; i++) {
-            console.log(arr[i].address.includes(121))
+            // console.log(arr[i].address.includes(121))
             if(arr[i].type === "parts"){
                 createProducts(arr[i], i, arr.length, 121)
                 productArray.push(arr[i])
@@ -186,7 +191,7 @@ if ( document.URL.includes("sell") ) {
     function displayData(arr) {
         sendToHtml.innerHTML = ``
         for (let i = 0; i < arr.length; i++) {
-            console.log(arr[i].address.includes(121))
+            // console.log(arr[i].address.includes(121))
             if(!arr[i].address.includes(121)){
                 createProducts(arr[i], i, arr.length, 121)
                 productArray.push(arr[i])
@@ -205,17 +210,23 @@ if ( document.URL.includes("sell") ) {
         function displayData(arr) {
             sendToHtml.innerHTML = ``
             for (let i = 0; i < arr.length; i++) {
-                console.log(arr[i].address.includes(121))
+                // console.log(arr[i].address.includes(121))
                 if(arr[i].address.includes(121)){
                     createProducts(arr[i], i, arr.length, 121)
                     productArray.push(arr[i])
                     if (arr[i].id>largestNum) {
                         largestNum = arr[i].id;
                     }
+                    total += Object.values(arr[i])[2]
+                    console.log(total)
+                    // content.innerHTML=`<h2>$${total}</h2>`
+                    var paragraph = document.getElementById("total");
+
+                    paragraph.textContent = `your total is $${total}`;
                     }}
             }
     }
-    console.log(productArray)
+    // console.log(productArray)
 
     
 // const filteringProducts = (key, value) => {
