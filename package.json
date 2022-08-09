@@ -7,5 +7,10 @@
     "json": "^11.0.0",
     "nodemon": "^2.0.19",
     "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start2": "nodemon server/server.js"
   }
 }
