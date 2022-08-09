@@ -45,6 +45,9 @@ app.get('/sell', (req, res) => {
 app.get('/vr', (req, res) => {
   res.sendFile(path.join(__dirname , '../vr.html'));
 });
+app.get('/checkout', (req, res) => {
+  res.sendFile(path.join(__dirname , '../checkout.html'));
+});
 
 
 const PORT = process.env.PORT || 4000;
