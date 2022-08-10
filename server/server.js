@@ -22,10 +22,19 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname , '../home.html'));
 });
 app.get('/home', (req, res) => {
-  res.sendFile(path.join(__dirname, '../home.html', '../index.css'));
-  // res.sendFile(path.join(__dirname , '../index.css'));
-  // res.sendFile(path.join(__dirname , 'controller.js'));
-  // res.sendFile(path.join(__dirname , '../index.js'));
+  res.sendFile(path.join(__dirname, '../home.html'));
+});
+app.get('/index.js', (res,req) => {
+  res.sendFile(path.join(__dirname, '../index.js'))
+});
+app.get('/controller.js', (res,req) => {
+  res.sendFile(path.join(__dirname, './controller.js'))
+});
+app.get('/db.json', (res,req) => {
+  res.sendFile(path.join(__dirname, './db.json'))
+});
+app.get('../index.css', (res,req) => {
+  res.sendFile(path.join(__dirname, '../index.css'))
 });
 app.get('/parts', (req, res) => {
   res.sendFile(path.join(__dirname , '../parts.html'));
