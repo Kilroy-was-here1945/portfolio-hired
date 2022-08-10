@@ -4,7 +4,7 @@ const forms = document.getElementById('form1')
 // import axios from "../node_modules/axios/dist/axios.min.js"
 // const axios = require('axios');
 
-const baseURL = 'http://localhost:4000/api/data'
+const baseURL = 'http://localhost:5500/api/data'
 
 const dataCallback = ({ data: data}) => displayData(data)
 const errCallback = err => console.log(err)
