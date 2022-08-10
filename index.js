@@ -94,7 +94,7 @@ const productArray = []
 let largestNum = 0
 
 
-if ( document.URL.includes("home") ) {
+// if ( document.URL.includes("home") ) {
     function displayData(arr) {
         sendToHtml.innerHTML = ``
         for (let i = 0; i < arr.length; i++) {
@@ -108,7 +108,7 @@ if ( document.URL.includes("home") ) {
                 // console.log(Object.values(arr[i])[2])
                 }}
         }
-}
+// }
 if ( document.URL.includes("vr") ) {
     function displayData(arr) {
         sendToHtml.innerHTML = ``
