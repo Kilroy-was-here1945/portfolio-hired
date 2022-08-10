@@ -3,6 +3,7 @@ const cors = require('cors');
 const path = require("path");
 
 
+
 const app = express();
 
 
@@ -19,45 +20,48 @@ app.delete('/api/data/:id', deleteData)
 
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname , '../home.html'));
-});
-app.get('/home', (req, res) => {
   res.sendFile(path.join(__dirname, '../home.html'));
 });
-app.get('/index.js', (res,req) => {
-  res.sendFile(path.join(__dirname, '../index.js'))
+app.get('/home.html', (req, res) => {
+  res.sendFile(path.join(__dirname, '../home.html'));
 });
-app.get('/controller.js', (res,req) => {
-  res.sendFile(path.join(__dirname, './controller.js'))
-});
-app.get('/db.json', (res,req) => {
-  res.sendFile(path.join(__dirname, './db.json'))
+app.get('axios', (req, res) => {
+  res.sendFile(path.join(__dirname, '/axios'));
 });
 app.get('../index.css', (res,req) => {
-  res.sendFile(path.join(__dirname, '../index.css'))
+  res.sendFile(path.join(__dirname, '../index.css'));
 });
-app.get('/parts', (req, res) => {
+app.get('/index.js', (req, res) => {
+  res.sendFile(path.join(__dirname, '../index.js'));
+});
+app.get('/controller.js', (res,req) => {
+  res.sendFile(path.join(__dirname, './controller.js'));
+});
+app.get('/db.json', (res,req) => {
+  res.sendFile(path.join(__dirname, './db.json'));
+});
+app.get('/parts.html', (req, res) => {
   res.sendFile(path.join(__dirname , '../parts.html'));
 });
-app.get('/pay', (req, res) => {
+app.get('/pay.html', (req, res) => {
   res.sendFile(path.join(__dirname , '../pay.html'));
 });
-app.get('/pc', (req, res) => {
+app.get('/pc.html', (req, res) => {
   res.sendFile(path.join(__dirname , '../pc.html'));
 });
-app.get('/phones', (req, res) => {
+app.get('/phones.html', (req, res) => {
   res.sendFile(path.join(__dirname , '../phones.html'));
 });
-app.get('/processors', (req, res) => {
+app.get('/processors.html', (req, res) => {
   res.sendFile(path.join(__dirname , '../processors.html'));
 });
-app.get('/sell', (req, res) => {
+app.get('/sell.html', (req, res) => {
   res.sendFile(path.join(__dirname , '../sell.html'));
 });
-app.get('/vr', (req, res) => {
+app.get('/vr.html', (req, res) => {
   res.sendFile(path.join(__dirname , '../vr.html'));
 });
-app.get('/checkout', (req, res) => {
+app.get('/checkout.html', (req, res) => {
   res.sendFile(path.join(__dirname , '../checkout.html'));
 });
 
