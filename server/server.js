@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 });
 app.get('/home', (req, res) => {
   res.sendFile(path.join(__dirname , '../home.html'));
-  res.sendFile(path.join(__dirname , '../index.css'));
+  // res.sendFile(path.join(__dirname , '../index.css'));
   // res.sendFile(path.join(__dirname , 'controller.js'));
   // res.sendFile(path.join(__dirname , '../index.js'));
 });
