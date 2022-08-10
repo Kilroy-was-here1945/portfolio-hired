@@ -23,6 +23,9 @@ app.get('/', (req, res) => {
 });
 app.get('/home', (req, res) => {
   res.sendFile(path.join(__dirname , '../home.html'));
+  res.sendFile(path.join(__dirname , 'db.json'));
+  res.sendFile(path.join(__dirname , 'controller.js'));
+  res.sendFile(path.join(__dirname , '../index.js'));
 });
 app.get('/parts', (req, res) => {
   res.sendFile(path.join(__dirname , '../parts.html'));
