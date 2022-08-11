@@ -1,7 +1,7 @@
 const sendToHtml = document.getElementById('electroics-container')
 const sendToHtml2 = document.getElementById('cart')
 const forms = document.getElementById('form1')
-import axios from "axios"
+// import axios from "axios"
 // const axios = require('axios');
 
 const baseURL = 'http://localhost:5500/api/data'
