@@ -1,5 +1,5 @@
-// import axios from "axios"
-const axios = require('axios');
+import axios from "axios"
+// const axios = require('axios');
 const sendToHtml = document.getElementById('electroics-container')
 const sendToHtml2 = document.getElementById('cart')
 const forms = document.getElementById('form1')
