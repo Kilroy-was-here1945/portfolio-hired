@@ -64,6 +64,7 @@ app.get('/vr.html', (req, res) => {
 app.get('/checkout.html', (req, res) => {
   res.sendFile(path.join(__dirname , '../checkout.html'));
 });
+app.use(express.static("."));
 
 
 const PORT = process.env.PORT || 5500;
