@@ -67,7 +67,7 @@ app.get('/checkout.html', (req, res) => {
 app.use(express.static("."));
 
 
-const PORT = process.env.PORT || 5500;
+const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
     console.log(`Listening on port http://localhost:${PORT}`);
