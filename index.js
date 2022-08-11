@@ -1,4 +1,4 @@
-import axios from "axios"
+// import axios from "axios"
 // const axios = require('axios');
 const sendToHtml = document.getElementById('electroics-container')
 const sendToHtml2 = document.getElementById('cart')
