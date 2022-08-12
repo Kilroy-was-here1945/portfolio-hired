@@ -4,7 +4,7 @@ const sendToHtml = document.getElementById('electroics-container')
 const sendToHtml2 = document.getElementById('cart')
 const forms = document.getElementById('form1')
 
-const baseURL = 'https://dj-f24-hosting.herokuapp.com/api/data'
+const baseURL = 'https://hard-working-coder.herokuapp.com/api/data'
 
 const dataCallback = ({ data: data}) => displayData(data)
 const errCallback = err => console.log(err)
